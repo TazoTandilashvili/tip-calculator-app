@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Logo-icon">
+    </div>
+    <div class="calculator--container">
+      <div class="bill--section">
+        <h2 class="section--title">Bill</h2>
+        <img class="icon--position" src="./images/icon-dollar.svg" alt="dolar-icon">
+        <input type="number" id="bill-input" class="input--container">
+      </div>
+      <div class="tip-section">
+        <h2 class="section--title tip-title">Select Tip %</h2>
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <input type="number" placeholder="custom" class="custopTip inputField">
+      </div>
+      <div class="numOfppl--section">
+        <h2 class="section--title">Number of People</h2>
+        <img class="icon--position" src="./images/icon-person.svg" alt="person-icon">
+        <input type="number" class="numOfppl  input--container">
+      </div>
+      <div class="tipAmount--section">
+        <div>
+          <div class="tip--amount">
+            <div class="tip-title">
+              <h2>Tip Amount</h2>
+              <h4>/ person</h4>
+            </div>
+            <div class="display-person-tip">
+              <h1 class="person-tip ">$4.27</h1>
+            </div>
+          </div>
+          <!--         total tip -->
+          <div class="tip--amount">
+            <div class="tip-title">
+              <h2>Total</h2>
+              <h4>/ person</h4>
+            </div>
+            <div class="display-person-tip">
+              <h1 class="total-tip ">$32.79</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- reset btn -->
+        <button class="reset--btn resetBtnDeact">reset</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
